@@ -7,5 +7,5 @@ npm i -D @babel/cli @babel/preset-env @babel/preset-typescript @types/express @t
 
 npm i typescript
 
-npm i cloudinary mongoose @elastic/elasticsearch jsonwebtoken http-status-codes
+npm i cloudinary mongoose @elastic/elasticsearch jsonwebtoken http-status-codes winston winston-elasticsearch
 ```
