@@ -3,11 +3,11 @@
 ```bash
 npm i express
 
-npm i -D @babel/cli @babel/preset-env @babel/preset-typescript @types/express @types/jsonwebtoken
+npm i -D @babel/cli @babel/preset-env @babel/preset-typescript @types/express @types/jsonwebtoken cross-env
 
 npm i typescript
 
-npm i cloudinary mongoose @elastic/elasticsearch jsonwebtoken http-status-codes winston winston-elasticsearch
+npm i cloudinary mongoose @elastic/elasticsearch http-status-codes winston winston-elasticsearch
 ```
 
 
