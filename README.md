@@ -9,3 +9,7 @@ npm i typescript
 
 npm i cloudinary mongoose @elastic/elasticsearch jsonwebtoken http-status-codes winston winston-elasticsearch
 ```
+
+
+# Utilidades
+- [Trabajar con Actions y NPM](https://docs.github.com/es/packages/working-with-a-github-packages-registry/working-with-the-npm-registry).
