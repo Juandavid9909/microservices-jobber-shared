@@ -22,7 +22,7 @@
     "author": "Juan David Varela R",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "git+https://github.com/Juandavid9909/microservices-jobber-shared.git"
     },
     "publishConfig": {
         "registry": "https://npm.pkg.github.com"
