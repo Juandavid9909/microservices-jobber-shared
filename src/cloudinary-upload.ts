@@ -1,11 +1,11 @@
 import cloudinary, { UploadApiErrorResponse, UploadApiResponse } from "cloudinary";
 
-export function uploads(
+export const uploads = (
   file: string,
   public_id?: string,
   overwrite?: boolean,
   invalidate?: boolean
-): Promise<UploadApiResponse | UploadApiErrorResponse | undefined> {
+): Promise<UploadApiResponse | UploadApiErrorResponse | undefined> => {
   return new Promise((resolve) => {
     cloudinary.v2.uploader.upload(
       file,
@@ -24,12 +24,12 @@ export function uploads(
   });
 }
 
-export function videoUpload(
+export const videoUpload = (
   file: string,
   public_id?: string,
   overwrite?: boolean,
   invalidate?: boolean
-): Promise<UploadApiResponse | UploadApiErrorResponse | undefined> {
+): Promise<UploadApiResponse | UploadApiErrorResponse | undefined> => {
   return new Promise((resolve) => {
     cloudinary.v2.uploader.upload(
       file,
