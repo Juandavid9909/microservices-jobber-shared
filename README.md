@@ -1,3 +1,12 @@
+> .[!NOTE]
+> No olvidar el token para poder instalar paquetes privados.
+
+> .[!IMPORTANT]
+> El token debe estar en el archivo `.npmrc` en la raíz del proyecto.
+
+> .[!TIP]
+> Para poder instalar paquetes privados, debe crear un token de acceso personal (secret) en el repositorio de GitHub.
+
 # Paquetes utilizados
 
 ```bash
