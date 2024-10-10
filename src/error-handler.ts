@@ -24,6 +24,8 @@ export abstract class CustomError extends Error {
   constructor(message: string, comingFrom: string) {
     super(message);
 
+    Object.setPrototypeOf(this, new.target.prototype);
+
     this.comingFrom = comingFrom;
   }
 
