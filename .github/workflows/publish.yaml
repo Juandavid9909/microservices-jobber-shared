@@ -20,7 +20,7 @@ jobs:
       - run: npm install
       - run: npm run build
         env:
-          GATEWAY_JWT_TOKEN: ${{ secrets.GATEWAY_JWT_TOKEN }
+          GATEWAY_JWT_TOKEN: ${{ secrets.GATEWAY_JWT_TOKEN }}
       - run: |
           echo @Juandavid9909:https://npm.pkg.github.com/ > build/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
