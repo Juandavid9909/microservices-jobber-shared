@@ -1,3 +1,5 @@
+import { config } from "./config";
+
 export {
   IAuth,
   IAuthBuyerMessageDetails,
@@ -104,3 +106,8 @@ export {
   lowerCase,
   toUpperCase,
 } from "./helpers";
+
+
+export const checkJWT = () => {
+  return config.GATEWAY_JWT_TOKEN;
+}
