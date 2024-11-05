@@ -18,7 +18,7 @@ export const verifyGatewayRequest = (req: Request, _res: Response, next: NextFun
   }
 
   try {
-    const payload: { id: string, iat: number } = JWT.verify(token, "92326bebb72f046c7b21e48c2e868c2d") as { id: string, iat: number };
+    const payload: { id: string, iat: number } = JWT.verify(token, `${config.GATEWAY_JWT_TOKEN}`) as { id: string, iat: number };
 
     if(!tokens.includes(payload.id)) {
       throw new NotAuthorizedError("Invalid request", "verifyGatewayRequest() method: Request payload is invalid");
