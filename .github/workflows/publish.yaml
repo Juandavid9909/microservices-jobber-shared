@@ -18,11 +18,13 @@ jobs:
         with:
           node-version: "18.x"
       - run: npm install
+        env:
+          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GATEWAY_JWT_TOKEN: ${{ secrets.GATEWAY_JWT_TOKEN }}
+      - run: echo "GATEWAY_JWT_TOKEN=${{ env.GATEWAY_JWT_TOKEN }}" >> $GITHUB_ENV
       - run: npm run build
       - run: |
           echo @Juandavid9909:https://npm.pkg.github.com/ > build/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
       - run: npm publish
         working-directory: ./build
-        env:
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
