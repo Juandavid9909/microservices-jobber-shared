@@ -106,8 +106,3 @@ export {
   lowerCase,
   toUpperCase,
 } from "./helpers";
-
-
-export const checkJWT = () => {
-  return config.GATEWAY_JWT_TOKEN;
-}
