@@ -4,7 +4,7 @@
 # Librerías de producción.
 
 ```bash
-npm i express typescript mongoose @elastic/elasticsearch cloudinary http-status-codes
+npm i express typescript mongoose @elastic/elasticsearch cloudinary http-status-codes jsonwebtoken
 ```
 
 # Librerías del ambiente de desarrollo.
