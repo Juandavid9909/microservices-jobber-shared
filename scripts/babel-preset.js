@@ -8,8 +8,6 @@ module.exports = () => ({
     [
       '@babel/env',
       {
-        bugfixes: true,
-        loose: true,
         modules: isCommonJS ? 'commonjs' : false,
         targets: {
           esmodules: isESM ? true : undefined,
