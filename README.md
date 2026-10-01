@@ -4,7 +4,7 @@
 # Librerías de producción.
 
 ```bash
-npm i express typescript mongoose @elastic/elasticsearch
+npm i express typescript mongoose @elastic/elasticsearch cloudinary
 ```
 
 # Librerías del ambiente de desarrollo.
