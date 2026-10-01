@@ -71,3 +71,12 @@ export class FileTooLargeError extends CustomError {
     super(message, comingFrom);
   }
 }
+
+export class ServerError extends CustomError {
+  statusCode = StatusCodes.SERVICE_UNAVAILABLE;
+  status = "error";
+
+  constructor(message: string, comingFrom: string) {
+    super(message, comingFrom);
+  }
+}
